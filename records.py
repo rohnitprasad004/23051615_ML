@@ -24,4 +24,4 @@ with open('university_records.csv', 'w', newline='') as csvfile:
 with open('university_records.csv', mode='r') as file:
     csvFile = csv.DictReader(file)
     for line in csvFile:
-        print(line)s
+        print(line)
