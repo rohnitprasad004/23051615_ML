@@ -1,8 +1,8 @@
 import csv
 import random
 
-names = ['Nikhil', 'Sanchit', 'Aditya', 'Sagar', 'Prateek']
-branches = ['COE', 'IT', 'SE', 'MCE']
+names = ['rohnit', 'rahul', 'parth', 'riya', 'Pritam']
+branches = ['csse', 'cse', 'mechanical', 'civil']
 years = [1, 2, 3, 4]
 cgpas = [7.8, 8.5, 9.0, 9.1, 9.3, 9.5]
 
