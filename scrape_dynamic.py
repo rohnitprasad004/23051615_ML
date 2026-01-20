@@ -12,7 +12,7 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 url = "https://quotes.toscrape.com/js/"   # THIS IS TRULY DYNAMIC
 driver.get(url)
 
-time.sleep(3)   # wait for JS to load
+time.sleep(3)   
 
 quotes = []
 authors = []

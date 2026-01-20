@@ -1,16 +1,16 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Data
+
 X = np.array([1, 2, 3, 4, 5], dtype=float)
 Y = np.array([5, 6, 10, 13, 11], dtype=float)
 
-# Initial parameters
+
 b0 = 3.3
 b1 = 1.19
 lr = 0.1
 
-# -------- Batch Gradient Descent --------
+
 def batch_gradient_descent(X, Y, b0, b1, lr, iterations=10):
     n = len(X)
     history = []
@@ -18,15 +18,15 @@ def batch_gradient_descent(X, Y, b0, b1, lr, iterations=10):
     for i in range(iterations):
         y_pred = b0 + b1 * X
 
-        # Compute gradients
+       
         db0 = (-2/n) * np.sum(Y - y_pred)
         db1 = (-2/n) * np.sum((Y - y_pred) * X)
 
-        # Update parameters
+        
         b0 = b0 - lr * db0
         b1 = b1 - lr * db1
 
-        # Store results
+      
         history.append((b0, b1, y_pred))
 
     return b0, b1, history

@@ -9,10 +9,10 @@ X = np.array([
 
 y = np.array([460, 232, 315, 178], float)
 
-# Add intercept term
+
 Xb = np.column_stack([np.ones(len(X)), X])
 
-# Normal equation
+
 beta = np.linalg.inv(Xb.T @ Xb) @ (Xb.T @ y)
 
 print("Coefficients:", beta)
